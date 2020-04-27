@@ -1,13 +1,7 @@
-/* modified from testthat until reassign_function and duplicaate_ are exported */
-
 #include <R.h>
 #include <Rinternals.h>
-#include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
-
-/* .Call calls */
-extern SEXP duplicate_(SEXP);
-extern SEXP reassign_function(SEXP, SEXP, SEXP, SEXP);
+#include <testthatAPI.h>
 
 static const R_CallMethodDef CallEntries[] = {
   {"duplicate_",         (DL_FUNC) &duplicate_,         1},

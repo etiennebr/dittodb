@@ -35,6 +35,7 @@ Imports:
     glue,
     methods,
     testthat
+LinkingTo: testthat
 Suggests: 
     callr,
     covr,
