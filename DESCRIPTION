@@ -56,3 +56,4 @@ RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
 Language: en-US
 VignetteBuilder: knitr
+Remotes: jonkeane/testthat@export-c-code
