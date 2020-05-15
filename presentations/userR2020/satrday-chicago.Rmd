@@ -1,0 +1,46 @@
+---
+output:
+  xaringan::moon_reader:
+    css: ["assets/metropolis.min.css", "assets/metropolis-fonts.min.css", "assets/fontawesome-all.min.css",
+    "assets/part-slide.min.css", "assets/my-theme.min.css"]
+    lib_dir: libs
+    nature:
+      ratio: "4:3"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE,
+                      fig.align = 'center',
+                      fig.width = 15, message = FALSE)
+```
+
+class: center, middle, inverse, title-slide
+
+# Introducing dittodb
+## `r icon::fa('twitter')` @jonkeane + @pachamaltese
+### 2020-05-30
+
+---
+
+# What is testing?
+  * Mocks/fixtures/stubs/spies/fake language
+  
+---
+
+# What is dittodb?
+  * Let's you record mock database responses
+  
+---
+  
+# What I've learned developing it
+  * CI is super important
+    - But also a royal pain for dbs
+  * You don't have to test a full path, sometimes up to a query is enough.
+    - Two paths:
+      - record and then reply
+      - verify calls are called (and how they are called)
